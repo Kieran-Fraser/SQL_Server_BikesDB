@@ -1,10 +1,12 @@
 --My Ride DateBase Creation
 --Kieran Fraser
 --use kfraser22
---create database kfraser22_Lab01 
+
 
 --------------------------------------------------------------------------------------------------------
 ------------------------------ Checks and dropping Tables -----------------------------------------
+
+--create database kfraser22_Lab01 
 
 if exists				-- must drop sessions first cause of foregin key connections
 (
@@ -50,7 +52,6 @@ drop table Classes_RDB
 use kfraser22
 --drop table Classes_RDB
 -- classes db creation
---create table kfraser22.Lab_01.Classes_RDB no permission to use db?
 create table kfraser22.dbo.Classes_RDB
 (
  ClassID nvarchar(10)  not null				-- not null classid is primary key
